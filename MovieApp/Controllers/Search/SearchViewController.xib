@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="MovieApp" customModuleProvider="target">
+            <connections>
+                <outlet property="searchBar" destination="vj8-3X-gdw" id="DSX-3N-70N"/>
+                <outlet property="tableView" destination="frv-vq-zT7" id="MnJ-yp-uoS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" placeholder="Search a movie..." showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vj8-3X-gdw">
+                    <rect key="frame" x="0.0" y="48" width="414" height="56"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                    <scopeButtonTitles>
+                        <string>Title</string>
+                        <string>Title</string>
+                    </scopeButtonTitles>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="dMC-PC-y1Z"/>
+                    </connections>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="frv-vq-zT7">
+                    <rect key="frame" x="0.0" y="104" width="414" height="758"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="frv-vq-zT7" firstAttribute="top" secondItem="vj8-3X-gdw" secondAttribute="bottom" id="BZQ-LH-ov6"/>
+                <constraint firstItem="frv-vq-zT7" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Cm4-Uo-UE5"/>
+                <constraint firstItem="frv-vq-zT7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="OR5-Ec-4ll"/>
+                <constraint firstItem="frv-vq-zT7" firstAttribute="top" secondItem="vj8-3X-gdw" secondAttribute="bottom" id="RFs-mp-hmu"/>
+                <constraint firstItem="frv-vq-zT7" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="UOV-Ql-C2O"/>
+                <constraint firstItem="vj8-3X-gdw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ZEQ-45-f96"/>
+                <constraint firstItem="vj8-3X-gdw" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="aCR-lb-sQO"/>
+                <constraint firstItem="vj8-3X-gdw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bdl-Lr-xex"/>
+            </constraints>
+            <point key="canvasLocation" x="115.94202898550725" y="19.419642857142858"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

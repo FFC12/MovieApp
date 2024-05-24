@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="MovieApp" customModuleProvider="target">
+            <connections>
+                <outlet property="moviesLabel" destination="znw-mC-Pc0" id="OEF-5A-1ZC"/>
+                <outlet property="tableView" destination="mo5-gv-Fzh" id="rTh-hH-6UI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="mo5-gv-Fzh">
+                    <rect key="frame" x="0.0" y="95.666666666666686" width="393" height="722.33333333333326"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znw-mC-Pc0">
+                    <rect key="frame" x="16" y="58.999999999999993" width="361" height="28.666666666666664"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="mo5-gv-Fzh" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="2Mi-Qo-Es8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="znw-mC-Pc0" secondAttribute="trailing" constant="16" id="8UP-Br-hAL"/>
+                <constraint firstItem="znw-mC-Pc0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="9jy-vW-a2M"/>
+                <constraint firstItem="mo5-gv-Fzh" firstAttribute="top" secondItem="znw-mC-Pc0" secondAttribute="bottom" constant="8" symbolic="YES" id="J2O-93-phK"/>
+                <constraint firstItem="znw-mC-Pc0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="SZR-Mk-Z9c"/>
+                <constraint firstItem="mo5-gv-Fzh" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="ewM-Yh-mbt"/>
+                <constraint firstItem="mo5-gv-Fzh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qCG-bo-xCa"/>
+                <constraint firstItem="mo5-gv-Fzh" firstAttribute="top" secondItem="znw-mC-Pc0" secondAttribute="bottom" constant="8" symbolic="YES" id="sUL-aI-4C9"/>
+            </constraints>
+            <point key="canvasLocation" x="116.79389312977099" y="19.718309859154932"/>
+        </view>
+    </objects>
+</document>

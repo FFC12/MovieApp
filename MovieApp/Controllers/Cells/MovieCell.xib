@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="139" id="KGk-i7-Jjw" customClass="MovieCell" customModule="MovieApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="139"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="139"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UWv-qk-cLj">
+                        <rect key="frame" x="0.0" y="0.0" width="95" height="139"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="95" id="OBu-fq-nve"/>
+                            <constraint firstAttribute="height" constant="139" id="U9L-WA-CgL"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" id="3CI-k3-Bqk">
+                        <rect key="frame" x="105" y="0.0" width="215" height="139"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aah-y3-Vy9">
+                                <rect key="frame" x="0.0" y="0.0" width="215" height="46.333333333333336"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YlE-Oy-sh4">
+                                <rect key="frame" x="0.0" y="46.333333333333329" width="215" height="46.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9yF-zr-EZr">
+                                <rect key="frame" x="0.0" y="92.666666666666671" width="215" height="46.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="40c-bJ-SxW"/>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="UWv-qk-cLj" secondAttribute="bottom" id="9mm-PK-rKt"/>
+                    <constraint firstItem="UWv-qk-cLj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Fd7-zp-1UV"/>
+                    <constraint firstItem="3CI-k3-Bqk" firstAttribute="leading" secondItem="UWv-qk-cLj" secondAttribute="trailing" constant="10" id="xui-MT-Qa4"/>
+                    <constraint firstItem="UWv-qk-cLj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="yHe-KU-Rm5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="movieAuthorLabel" destination="YlE-Oy-sh4" id="Sjb-9g-2ks"/>
+                <outlet property="movieImageView" destination="UWv-qk-cLj" id="rF8-1R-Xp3"/>
+                <outlet property="moviePlotLabel" destination="9yF-zr-EZr" id="TxW-Dk-pbE"/>
+                <outlet property="movieTitleLabel" destination="Aah-y3-Vy9" id="uFb-vT-JSx"/>
+            </connections>
+            <point key="canvasLocation" x="58.015267175572518" y="53.87323943661972"/>
+        </tableViewCell>
+    </objects>
+</document>
