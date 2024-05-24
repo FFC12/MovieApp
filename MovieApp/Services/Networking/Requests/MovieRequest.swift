@@ -2,12 +2,10 @@
 //  MovieRequest.swift
 //  MovieApp
 //
-//  Created by Furkan Fatih Cetindil on 15.05.2024.
+//  Created by Furkan Fatih Cetindil
 //
-
 import Foundation
 
-/// MARK - MovieRetrieveRequest
 /// We will use this request to get movie and its details
 class MovieRetrieveRequest: NetworkRequest {
     var baseURL: URL {
