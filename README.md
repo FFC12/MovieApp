@@ -2,7 +2,7 @@
 
 This iOS app fetches basic movie data (title, directors, actors, year and etc.) from the OMDB API using Swift and UIKit. It showcases the basic skills related to develop an iOS app with UIKit.
 
-![](https://github.com/FFC12/MovieApp/assets/25594458/9e67f7e8-c9f6-476c-b20b-c58ba0b7bcf3)
+https://github.com/FFC12/MovieApp/assets/25594458/9e67f7e8-c9f6-476c-b20b-c58ba0b7bcf3
 
 Features:
 
